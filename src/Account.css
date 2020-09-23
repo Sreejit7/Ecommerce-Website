@@ -1,0 +1,12 @@
+.account__page{
+    background-color: rgb(235, 236, 236);
+    padding: 30px;
+}
+.account__page > h1{
+    text-align: center;
+    
+
+}
+.account__page > h2{
+    margin-top: 15px;
+}

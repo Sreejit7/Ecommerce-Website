@@ -1,0 +1,19 @@
+.footer__column{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 10px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+.footer__column > h2{
+    font-family: monospace;
+}
+.footer__column >p{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 3px;
+}

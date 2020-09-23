@@ -1,0 +1,84 @@
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,75,135,1) 51%, rgba(0,212,255,1) 100%);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    top: 0%;
+    position: sticky;
+    z-index: 100;
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header_logo{
+    width: 130px;
+    margin:  20px;
+    object-fit: contain;
+    
+}
+.header_search{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 20px;
+}
+.header_input{
+    height: 12px;
+    width:93%;
+    padding: 10px;
+    border: none;
+}
+.header_search_icon{
+    background-color: darkorange;
+    height: 23px !important;
+    padding: 5px;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 25px;
+    
+}
+.header_nav a{
+    text-decoration: none
+}
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: azure;
+    
+}
+
+.option_line_one{
+    font-size: 13px;
+
+}
+.option_line_two{
+    font-size: 15px;
+    font-weight: 800;
+    color: white; 
+}
+.add_cart{
+    display: flex;
+    align-items: center;
+    color: azure;
+    margin-left: 5px;
+}
+.card_items{
+    margin-right: 10px;
+    margin-left: 10px;
+}

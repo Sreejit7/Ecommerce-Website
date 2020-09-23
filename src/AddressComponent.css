@@ -1,0 +1,32 @@
+.address__item{
+    border: 1px solid  lightgray;
+    padding: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+    background: rgb(253, 253, 252);
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.address__item> p{
+    padding: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.address__item> button{
+    background: rgb(243, 183, 19);
+    color: rgb(3, 3, 3);
+    height: 30px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 2px;
+    margin-top: auto;
+    border-color:  #a88734 rgb(167, 126, 23) #846a29;
+    border-collapse: collapse;
+    
+}

@@ -1,0 +1,48 @@
+.delivery__address__input{
+    display: flex;
+    flex-direction: column;
+}
+.payment__address >form{
+    display: flex;
+    padding: 5px;
+    
+}
+.payment__address > form > div> input{
+    height: 18px;
+    margin-bottom: 5px;
+    padding: 2px;
+    background-color: rgb(238, 234, 234);
+    margin: 0 5px;
+}  
+.payment__address > form > div> p{
+    margin-top:  7px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    margin: 0 2px;
+}
+.payment__address >form >button{
+    background: #f0c14b;
+    border: 1px solid;
+    height: 30px;
+    margin-top: 50px;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-weight: bolder;
+    color: #111;
+    border-radius: 3px;
+    width: 120px;
+    margin-left: 10px;
+    
+}
+.change__address{
+    background: #f0c14b;
+    border: 1px solid;
+    height: 30px;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    font-weight: bolder;
+    color: #111;
+    border-radius: 3px;
+    width: 120px;
+    
+     
+}  

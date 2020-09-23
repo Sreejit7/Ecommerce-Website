@@ -1,0 +1,17 @@
+.address__list{
+    display: flex;
+    background-color: rgb(238, 236, 236);
+    padding: 50px;
+}
+.add__newAddress{
+    width: 200px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+}
+.add_addressIcon{
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 75px;
+}
