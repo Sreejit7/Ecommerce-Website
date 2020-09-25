@@ -3,6 +3,10 @@
     background: rgb(236, 236, 236);
     height: 100vh;
 }
+.product__form{
+    display: flex;
+    flex-direction: column;
+}
 .product__upload > div> form{
     border: 1px solid lightgray;
     background: white;
@@ -16,7 +20,7 @@
 }
 .product__upload > div> form > div> input{
     width: 100%;
-    
+    background-color: rgb(233, 231, 231);
     margin-top: 4px;
     margin-bottom: 4px;
 }
@@ -40,7 +44,7 @@
 .product__name{
     height: 35px;
 }
-.productUpload__row> button{
+.product__upload> div> button{
     background: rgb(243, 183, 19);
     color: rgb(3, 3, 3);
     height: 30px;
