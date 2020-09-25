@@ -12,6 +12,7 @@ import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
 import Orders from './Orders';
 import Account from './Account';
+import ProductUpload from './ProductUpload';
 
 const promise= loadStripe(
   "pk_test_51HQXCJGyL70zgiPvqEql3YXbJbJG5LYCbHQxo08MRB7qjztSMk9J3GBh0ev5GIu8AghZ0Faun6QZ8MEe4cS9gvCm00Rw2vVC0O"
@@ -58,6 +59,10 @@ function App() {
                 window.location.href = 'https://www.idbifederal.com/'; 
                     return null;
             }}/>
+
+        <Route path='/productupload'>
+          <ProductUpload/>
+        </Route>
         
         <Route path="/orders">
           <Header/>

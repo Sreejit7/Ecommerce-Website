@@ -5,11 +5,14 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { db } from './firebase';
 import { useStateValue } from './StateProvider';
 import Address from './Address';
+import {motion} from 'framer-motion';
 
 function AddressList() {
     const [addressList, setAddressList] = useState([]);
     const [{user}, dispatch] =useStateValue();
     const [addAddress, setAddAddress] = useState(false);
+
+    
 
     useEffect(() => {
        if(user){ 
@@ -41,9 +44,12 @@ function AddressList() {
                     <AddCircleIcon  className='add_addressIcon' style={{fontSize:55}}/>
                 </div>
             </div>
-            <div>
+             
+           {addAddress && <div className="address__form">
+                <h4>Add a new delivery address</h4>
+                <Address hideButton={true}/> 
                 
-            </div>
+           </div> }
         </div>
     )
 }

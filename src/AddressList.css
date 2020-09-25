@@ -15,3 +15,12 @@
     margin-right: 20px;
     margin-top: 75px;
 }
+
+.address__form{
+    background: white;
+    padding: 20px;
+    width: 530px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    margin: auto;
+}

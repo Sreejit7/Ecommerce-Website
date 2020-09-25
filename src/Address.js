@@ -3,7 +3,7 @@ import './Address.css';
 import {db} from './firebase';
 import {useStateValue} from './StateProvider';
 
-function Address(deliveryPage) {
+function Address({hideButton}) {
 
     const [{ cart, user }, dispatch] = useStateValue();
     const [line1, setLine1] = useState('');
@@ -32,8 +32,8 @@ function Address(deliveryPage) {
 
     return (
         <div className='payment__address'>
-            <h4>{loadAddress?"Your order will be delivered to:":"Enter your delivery address here"}</h4>
-            { (!loadAddress) &&(deliveryPage) && (
+            {!hideButton && <h4>{loadAddress?"Your order will be delivered to:":"Enter your delivery address here"}</h4> }
+            { !loadAddress && (
             <form>
                 
                 <div className="delivery__address__input">
@@ -54,10 +54,10 @@ function Address(deliveryPage) {
                     <input type="text" value={landmark} onChange={e=> setLandmark(e.target.value)}/>
                     
                 </div>
-                <button onClick={handleAddress}>Save Address</button>
+                <button onClick={handleAddress}>Save Address</button> 
             </form>
         )}
-        {(loadAddress) && (deliveryPage) && (
+        {loadAddress && (
             <div className='delivery__address__input'>
                 <p>{line1}</p> <p>{pin}</p>
                 <p>{line2}</p>  <p>{city}</p>

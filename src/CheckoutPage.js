@@ -101,6 +101,7 @@ function Payment() {
                         
                     </div>
                     <div className='checkout__section__right'>
+                        
                         <Address/>
                     </div>
                     
