@@ -2,7 +2,7 @@ import React from 'react'
 import './Product.css';
 import {useStateValue} from './StateProvider';
 import {motion} from 'framer-motion';
-function Product({id,title,price,rating,image}) {
+function Product({id,title,price,rating,image, addingPage}) {
     const [{cart},  dispatch] =useStateValue();
     console.log(cart);
     const addToCart=()=>{
@@ -38,10 +38,11 @@ function Product({id,title,price,rating,image}) {
                 src={image}
                 alt=""
             />
-            <motion.button whileHover={{backgroundColor:'black'}} whileTap={{opacity:0.2,scale:0.9}} className="product__button" onClick={addToCart}
+          {!addingPage && ( <motion.button whileHover={{backgroundColor:'black'}} whileTap={{opacity:0.2,scale:0.9}} className="product__button" onClick={addToCart}
             >
                 Add to Cart
-            </motion.button>
+            </motion.button> 
+          )}
 
         </motion.div>
     )

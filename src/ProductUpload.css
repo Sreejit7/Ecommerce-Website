@@ -1,18 +1,35 @@
 .product__upload{
-    padding: 50px;
-    background: rgb(236, 236, 236);
+    padding: 50px;   
+    background: linear-gradient(-150deg, rgb(13, 23, 92) 4%, rgb(18, 45, 128) 16%, rgba(36,103,238,0.9850315126050421) 41%, rgba(142,76,156,1) 58%, rgba(252,69,69,1) 84%);
+    background-size: 400% 400%;
     height: 100vh;
+    display: flex;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 .product__form{
     display: flex;
     flex-direction: column;
+    flex:0.7;
 }
 .product__upload > div> form{
     border: 1px solid lightgray;
     background: white;
     padding: 20px;
     width: 520px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
 }
 .product__upload > div> form > h2{
     text-align: center;
@@ -47,14 +64,39 @@
 .product__upload> div> button{
     background: rgb(243, 183, 19);
     color: rgb(3, 3, 3);
-    height: 30px;
+    height: 35px;
     font-size: 16px;
-    width: 50%;
+    width: 20%;
     border: 1px solid;
     border-radius: 2px;
     margin-top: 20px;
-    border-color:  #a88734 rgb(167, 126, 23) #846a29;
+    border-color:  #a88734 rgb(167, 126, 23) #41320f;
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+}
+.product__component{
+    margin: auto;
+    width: 650px;    
+}
+.product__uploadIndicator{
+    align-items: center;
+    margin-left: 150px;
+    margin-right: auto;
+    display: flex;
+    padding: 3px;
+}
+.product__uploadIndicator > h1{
+    margin-left: 8px;
+}
+.product__headline{
+    flex:0.2;
+    margin-left: 60px;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 1px solid;
+}
+.product__uploadLogo{
+    width: 470px;
+    margin-top: 30px;
 }
