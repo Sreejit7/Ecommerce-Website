@@ -153,6 +153,7 @@ function Home() {
                         opt1="Advertise your product"
                         opt2="Become a merchant"
                         opt3="Careers"
+                        link1="productupload"
                     />                
                 </div>
             

@@ -11,9 +11,16 @@
 }
 .footer__column > h2{
     font-family: monospace;
+    
+}
+.footer__column > h2 a{
+    text-decoration: none;
 }
 .footer__column >p{
     font-weight: 400;
     font-size: 14px;
     padding: 3px;
+}
+.footer__column >p a{
+    text-decoration: none;
 }

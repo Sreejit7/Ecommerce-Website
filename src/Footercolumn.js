@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footercolumn.css';
 
-function Footercolumn({title,opt1,opt2,opt3}) {
+function Footercolumn({title,opt1,opt2,opt3,link1}) {
     return (
         <div className='footer__column'>
             <h2>{title}</h2> 

@@ -4,8 +4,8 @@
     flex-direction: column;
     background-color: white;
     height: 100vh;
+    background: linear-gradient(-150deg, rgb(13, 23, 92) 4%, rgb(18, 45, 128) 16%, rgba(36,103,238,0.9850315126050421) 41%, rgba(142,76,156,1) 58%, rgba(252,69,69,1) 84%);
     background-size: 400% 400%;
-    background: linear-gradient(93deg, rgba(58,61,180,1) 0%, rgba(56,184,227,0.8813900560224089) 50%, rgba(252,69,69,1) 100%);
     animation: gradient 10s ease infinite;
 }
 
@@ -29,7 +29,22 @@
     margin-left: auto;
     margin-right: auto;
 }
+.login__component{
+    display: flex;
+}
+.login__message{
+    flex: 0.2;
+    color: rgb(230, 230, 230);
+}
+.login__message > h1{
+    font-size: 60px;
+    margin-right: 50px;
+    text-shadow: 3px 3px #0f0f0f;
+ 
+}
+
 .login__container{
+    flex: 0.7;
     width: 300px;
     display: flex;
     flex-direction: column;

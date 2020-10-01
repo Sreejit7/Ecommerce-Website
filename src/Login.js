@@ -25,26 +25,35 @@ function Login() {
                  alt=''
             />
             </Link>
-            <div className="login__container">
-                <h1 className='login__title'>Sign-in</h1>
-                    <form>
-                        <h5>Email ID</h5>
-                        <input type='text'placeholder="Type your Email ID here" value={email} onChange={e=> setEmail(e.target.value)}/>
-                        <h5>Password</h5>
-                        <input type='password' placeholder="Type your password here" value={password} onChange={e=> setPassword(e.target.value)}/>
-                        <button className="login__button" type="submit" 
-                                onClick={signIn}>
-                                Sign-in
-                        </button>
-                    </form>
+            <div className="login__component">
+                <div className="login__message">
+                    <h1 className='login__text'>Best Place. </h1>
+                    <h1> To Find</h1>
+                    <h1>Your Favourite</h1>
+                    <h1>Homemade</h1>
+                    <h1> Products.</h1>
+                </div>
+                <div className="login__container">
+                    <h1 className='login__title'>Sign-in</h1>
+                        <form>
+                            <h5>Email ID</h5>
+                            <input type='text'placeholder="Type your Email ID here" value={email} onChange={e=> setEmail(e.target.value)}/>
+                            <h5>Password</h5>
+                            <input type='password' placeholder="Type your password here" value={password} onChange={e=> setPassword(e.target.value)}/>
+                            <button className="login__button" type="submit" 
+                                    onClick={signIn}>
+                                    Sign-in
+                            </button>
+                        </form>
 
-                    <p>
-                        By signing-in you agree to our
-                        Conditions of Use & Sale. Please check out our
-                        privacy policy and cookies and our Interent-Based Ads
-                    </p>
-                    <p>Don't have an account?</p>
-                    <button className="create__account" onClick={creteAccount}>Create Account</button>
+                        <p>
+                            By signing-in you agree to our
+                            Conditions of Use & Sale. Please check out our
+                            privacy policy and cookies and our Interent-Based Ads
+                        </p>
+                        <p>Don't have an account?</p>
+                        <button className="create__account" onClick={creteAccount}>Create Account</button>
+                </div>
             </div>
         </div>
     ) 
