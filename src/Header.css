@@ -78,7 +78,6 @@
     color: azure;
     margin-left: 5px;
 }
-.card_items{
-    margin-right: 10px;
-    margin-left: 10px;
+.cart_items{
+   margin: 0;
 }
