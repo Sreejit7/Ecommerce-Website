@@ -2,8 +2,8 @@ import React from 'react';
 import './Home.css';
 import Product from './Product';
 import SimpleImageSlider from "react-simple-image-slider";
-import Footercolumn from './Footercolumn';
-import FacebookIcon from '@material-ui/icons/Facebook';
+import {Footercolumn} from './Footercolumn';
+
 //import {AnimationWrapper,useHover} from 'react-hover-animation';
 function Home() {
 
@@ -133,28 +133,18 @@ function Home() {
             </div>
             
                 <div className='home__footer' >
-                    <Footercolumn
-                        title="About Us"
-                        opt1="Who are we?"
-                        opt2="Our ambition"
-                        opt3="Privacy policies"
-                    />
-                    <div >
-                    <Footercolumn
-                        title="Connect with us"
-                        opt1="Facebook" 
-                        opt2="Instagram"
-                        opt3="Twitter"
-                    />
-                    
-                    </div>  
-                    <Footercolumn
-                        title="Sell with us"
-                        opt1="Advertise your product"
-                        opt2="Become a merchant"
-                        opt3="Careers"
-                        link1="productupload"
-                    />                
+                    {
+                        Footercolumn.map((item,index)=> {
+                            return(
+                                <li key={index} className={item.cName}>
+                                    <strong className="footer__title">{item.title}</strong>
+                                    <div className="footer__option"><p>{item.opt1}</p> {item.icon1} </div>
+                                    <div className="footer__option"><p >{item.opt2}</p> {item.icon2}</div>
+                                    <div className="footer__option"><p>{item.opt3}</p> {item.icon3}</div>
+                                </li>
+                            );
+                        })
+                    }
                 </div>
             
 
