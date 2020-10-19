@@ -1,6 +1,7 @@
 export const initialState={
     cart:[],
-    user: null
+    user: null,
+    products:[]
 };
 //Selector reduce func
 export const getCartTotal=(cart)=>
@@ -39,6 +40,11 @@ const reducer = (state,action) =>{
             return{
                 ...state, user: action.user
             }
+        case 'ADD_PRODUCT':
+            return{
+                ...state,
+                products:[...state.products,action.item]
+            };
         default:
             return state;
     }

@@ -5,6 +5,7 @@ import {db,storage} from './firebase';
 import {Link} from 'react-router-dom';
 import Product from './Product';
 import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
+import { useStateValue } from './StateProvider';
 
 function ProductUpload() {
     const [name, setName] = useState('');
@@ -13,7 +14,8 @@ function ProductUpload() {
     const [image, setImage] = useState(null);
     const [imageUrl, setImageUrl] = useState('');
     const [productload, setProductload] = useState(false);
-    
+    const [{products},dispatch] = useStateValue();
+    console.log(products);
     const productID = Math.random().toString(36).substring(2,9);
     const handleImageInput = e =>{
         if(e.target.files[0]){
@@ -55,8 +57,19 @@ function ProductUpload() {
             price:price,
             imageUrl:imageUrl
 
+        })
+        dispatch({
+            type:"ADD_PRODUCT",
+            item:{
+                productID:productID,
+                name:name,
+                desc:desc,
+                price:price,
+                imageUrl:imageUrl
+
+            }
         })  
-      };
+    };
     
     
     return (

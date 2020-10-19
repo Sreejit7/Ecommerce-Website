@@ -1,16 +1,34 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Header.css";
 import SearchIcon from '@material-ui/icons/Search';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import Sidebar from './Sidebar';
 import { Link } from "react-router-dom";
 import {useStateValue} from './StateProvider';
-import { auth } from "./firebase";
+import { db,auth } from "./firebase";
 function Header() {
-  const [{cart,user}, dispatch] =useStateValue();
+  const [{cart,user,products}, dispatch] =useStateValue();
+  const [productList, setProductList] = useState([]);
+  const [search, setSearch] = useState('');
+ 
+
   const handleAuthentication=()=>{
     auth.signOut();
   }
+
+    db.collection('products')
+    .onSnapshot(
+      snapshot=>
+      (
+          setProductList(snapshot.docs.map(doc=> ({
+              id: doc.id, 
+              data:doc.data()
+          })))
+      )
+    )
+    
+
+  
   return (
     <div className="header">
       <Sidebar/>
@@ -22,7 +40,7 @@ function Header() {
       </Link>
       
       <div className="header_search">
-        <input className="header_input" type="text" />
+        <input className="header_input" type="text" onChange={e=> setSearch(e.target.value)} />
         {/*Logo*/}
         <SearchIcon className="header_search_icon"/>
       </div>
