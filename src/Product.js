@@ -38,7 +38,7 @@ function Product({id,title,price,rating,image, addingPage}) {
                 src={image}
                 alt=""
             />
-          {!addingPage && ( <motion.button whileHover={{backgroundColor:'black'}} whileTap={{opacity:0.2,scale:0.9}} className="product__button" onClick={addToCart}
+          {!addingPage && ( <motion.button whileHover={{backgroundColor:'orange'}} whileTap={{opacity:0.2,scale:0.9}} className="product__button" onClick={addToCart}
             >
                 Add to Cart
             </motion.button> 

@@ -3,7 +3,7 @@ import './Home.css';
 import Product from './Product';
 import SimpleImageSlider from "react-simple-image-slider";
 import {Footercolumn} from './Footercolumn';
-
+import {Link} from 'react-router-dom';
 //import {AnimationWrapper,useHover} from 'react-hover-animation';
 function Home() {
 
@@ -136,11 +136,18 @@ function Home() {
                     {
                         Footercolumn.map((item,index)=> {
                             return(
+                                
                                 <li key={index} className={item.cName}>
-                                    <strong className="footer__title">{item.title}</strong>
-                                    <div className="footer__option"><p>{item.opt1}</p> {item.icon1} </div>
-                                    <div className="footer__option"><p >{item.opt2}</p> {item.icon2}</div>
-                                    <div className="footer__option"><p>{item.opt3}</p> {item.icon3}</div>
+                                    <h2>{item.title}</h2>
+                                    <Link to = {item.path1}>
+                                    <span>{item.opt1}  </span>
+                                    </Link>
+                                    <Link to = {item.path2}>
+                                    <span>{item.opt2}</span> 
+                                    </Link>
+                                    <Link to = {item.path3}>
+                                    <span>{item.opt3}</span> 
+                                    </Link>
                                 </li>
                             );
                         })

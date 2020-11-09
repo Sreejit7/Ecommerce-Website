@@ -53,6 +53,9 @@
 
     
 }
+.footer__option > p > a{
+    text-decoration: none;
+}
 .footer__option a{
     text-decoration: none;
 }

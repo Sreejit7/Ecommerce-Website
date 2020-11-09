@@ -9,6 +9,7 @@ export const Footercolumn = [
     {
         title:"About Us",
         opt1:"Who are we?",
+        path1:'/who_are_we',
         opt2:"Our ambition",
         opt3:"Privacy policies",
         cName:"footer__column"
