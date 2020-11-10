@@ -1,3 +1,21 @@
+# Ecommerce-website <img align = "right" src ="https://img.shields.io/github/watchers/Sreejit7/Ecommerce-website?style=social"> <img align = "right" src ="https://img.shields.io/github/stars/Sreejit7/Ecommerce-website?style=social"><img align = "right" src= "https://img.shields.io/github/forks/Sreejit7/Ecommerce-website?style=social">
+
+<p align="center">
+<img src="https://img.shields.io/github/contributors/Sreejit7/Ecommerce-website?style=for-the-badge">
+<img src="https://img.shields.io/tokei/lines/github/Sreejit7/Ecommerce-website?style=for-the-badge">
+<img src="https://img.shields.io/github/last-commit/Sreejit7/Ecommerce-website?style=for-the-badge">
+<img src="https://img.shields.io/github/languages/count/Sreejit7/Ecommerce-website?style=for-the-badge">
+<img src="https://img.shields.io/github/languages/code-size/Sreejit7/Ecommerce-website?style=for-the-badge" alt="code size">
+ </p>
+ 
+<p align="center">
+<img src="https://img.shields.io/github/issues/Sreejit7/Ecommerce-website?style=for-the-badge" alt="open issues">
+<img src="https://img.shields.io/github/issues-closed/Sreejit7/Ecommerce-website?style=for-the-badge" alt="closed issues">
+<img src="https://img.shields.io/github/issues-pr/Sreejit7/Ecommerce-website?style=for-the-badge" alt="open pull request">
+<img src="https://img.shields.io/github/issues-pr-closed/Sreejit7/Ecommerce-website?style=for-the-badge" alt="closed pull request">
+</p>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
