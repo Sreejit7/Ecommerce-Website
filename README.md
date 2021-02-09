@@ -17,7 +17,7 @@
 
 <p align="center">
   <a href="https://github.com/Sreejit7/Ecommerce-website">
-    <img src="./public/images/homemade.png" alt="Logo" width="80" height="80">
+    <img src="/images/homemade.png" alt="Logo" width="80" height="80">
   </a>
 </p>
 
